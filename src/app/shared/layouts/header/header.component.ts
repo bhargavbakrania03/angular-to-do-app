@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TokenService } from '../../../core/services/token.service';
+import { AuthService } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +10,16 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  isAuthenticated$;
 
+  constructor(
+    private tokenService: TokenService,
+    private authService: AuthService
+  ) {
+    this.isAuthenticated$ = this.tokenService.isAuthentication;
+  }
+
+  onLogout() {
+    this.authService.onLogout();
+  }
 }

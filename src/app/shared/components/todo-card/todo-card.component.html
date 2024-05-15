@@ -1,9 +1,9 @@
 <div class="flex justify-between gap-10 py-5 px-6 cursor-pointer hover:bg-gray-100 relative border-b border-gray-200">
-    <div class="border-l-4 border-blue-100 pl-4">
+    <div class="border-l-4 pl-4" [ngClass]="{'border-gray-200': type === 'OPEN', 'border-blue-200': type === 'PROGRESS', 'border-red-200': type === 'TESTING', 'border-green-200': type === 'DONE'}">
         <h4 class="font-bold">{{todo.title}}</h4>
         <p class="text-gray-400 h-6 overflow-y-hidden">{{todo.description}}</p>
     </div>
     <div>
-        <div class="bg-gray-100 border border-gray-500 text-gray-600 text-xs font-medium p-1 px-2 rounded-full">OPEN</div>
+        <div class="bg-gray-100 border text-xs font-medium p-1 px-2 rounded-full" [ngClass]="{'border-gray-500 text-gray-600': type === 'OPEN', 'border-blue-500 text-blue-600': type === 'PROGRESS', 'border-red-500 text-red-600': type === 'TESTING', 'border-green-500 text-green-600': type === 'DONE'}">{{type}}</div>
     </div>
 </div>

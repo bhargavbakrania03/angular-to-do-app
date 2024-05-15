@@ -1,0 +1,49 @@
+{
+  "todo": [
+    {
+      "title": "Complete Angular",
+      "description": "Angular Course",
+      "status": "DONE",
+      "id": "4hj1"
+    },
+    {
+      "id": "2i89",
+      "title": "Learn Ngrx",
+      "description": "A state Management library for Angular",
+      "status": "PROGRESS"
+    },
+    {
+      "title": "Make Todo Project",
+      "description": "Todo Project in Angular",
+      "status": "TESTING",
+      "id": "gts5"
+    },
+    {
+      "id": "308a",
+      "title": "Testing Todo",
+      "description": "Testing Todo",
+      "status": "OPEN"
+    }
+  ],
+  "login": [
+    {
+      "id": "1e10",
+      "email": "bb@b.com",
+      "password": "bb13"
+    },
+    {
+      "id": "15ff",
+      "email": "bb@B.com",
+      "password": "bhargav4"
+    }
+  ],
+  "logout": [
+    {
+      "id": "8017"
+    },
+    {
+      "id": "e242"
+    }
+  ],
+  "user": []
+}
